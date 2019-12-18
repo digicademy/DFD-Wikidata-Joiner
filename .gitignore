@@ -9,3 +9,4 @@ internal/
 port_*/
 .metadata/
 internalTables/
+.*.autoSave/
