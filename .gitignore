@@ -1,0 +1,12 @@
+## KNIME files
+.knimeLock
+.project
+.savedWithData
+workflowset.meta
+
+## KNIME directories containing node data
+internal/
+port_*/
+.metadata/
+internalTables/
+.*.autoSave/
