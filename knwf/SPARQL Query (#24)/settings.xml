@@ -10,7 +10,7 @@
 <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>
 </config>
-<entry key="query" type="xstring" value="PREFIX wd: &lt;http://www.wikidata.org/entity/&gt;%%00010PREFIX wdt: &lt;http://www.wikidata.org/prop/direct/&gt;%%00010PREFIX wikibase: &lt;http://wikiba.se/ontology#&gt;%%00010PREFIX p: &lt;http://www.wikidata.org/prop/&gt;%%00010PREFIX ps: &lt;http://www.wikidata.org/prop/statement/&gt;%%00010PREFIX pq: &lt;http://www.wikidata.org/prop/qualifier/&gt;%%00010PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;%%00010PREFIX bd: &lt;http://www.bigdata.com/rdf#&gt;%%00010%%00010SELECT ?item ?nl%%00010{%%00010    # all items for family names with Latin script and a defined native label%%00010    ?item wdt:P31 wd:Q101352 ; wdt:P282 wd:Q8229 ; wdt:P1705 ?nl .%%00010    # exclude items which already have DFD ID%%00010    MINUS { ?item wdt:P6597 ?id }%%00010    # exclude items which have additional other scripts%%00010    MINUS { ?item wdt:P282 ?script . FILTER(?script != wd:Q8229 ) }%%00010}"/>
+<entry key="query" type="xstring" value="PREFIX wd: &lt;http://www.wikidata.org/entity/&gt;%%00010PREFIX wdt: &lt;http://www.wikidata.org/prop/direct/&gt;%%00010PREFIX wikibase: &lt;http://wikiba.se/ontology#&gt;%%00010PREFIX p: &lt;http://www.wikidata.org/prop/&gt;%%00010PREFIX ps: &lt;http://www.wikidata.org/prop/statement/&gt;%%00010PREFIX pq: &lt;http://www.wikidata.org/prop/qualifier/&gt;%%00010PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;%%00010PREFIX bd: &lt;http://www.bigdata.com/rdf#&gt;%%00010%%00010SELECT ?id%%00010{%%00010    # items with DFD ID%%00010    ?item wdt:P6597 ?id .%%00010}"/>
 <config key="timeout_Internals">
 <entry key="SettingsModelID" type="xstring" value="SMN_long"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -23,11 +23,11 @@
 <entry key="type" type="xboolean" value="false"/>
 </config>
 <config key="nodeAnnotation">
-<entry key="text" type="xstring" value="candidate family names"/>
+<entry key="text" type="xstring" value="all DFD IDs on Wikidata"/>
 <entry key="bgcolor" type="xint" value="16777215"/>
-<entry key="x-coordinate" type="xint" value="280"/>
-<entry key="y-coordinate" type="xint" value="504"/>
-<entry key="width" type="xint" value="150"/>
+<entry key="x-coordinate" type="xint" value="283"/>
+<entry key="y-coordinate" type="xint" value="299"/>
+<entry key="width" type="xint" value="154"/>
 <entry key="height" type="xint" value="19"/>
 <entry key="alignment" type="xstring" value="CENTER"/>
 <entry key="borderSize" type="xint" value="0"/>
