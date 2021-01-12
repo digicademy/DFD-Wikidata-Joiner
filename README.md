@@ -23,7 +23,7 @@ The resulting list of matches is transformed to the CSV format required by Quick
 
 All releases can be downloaded as a .knwf file from the [release page of this repository](https://github.com/digicademy/DFD-Wikidata-Joiner/releases).
 
-The .knwf file can then be imported in [KNIME version 4.1.0 or higher](https://www.knime.com/downloads/download-knime).
+The .knwf file can then be imported in [KNIME version 4.2.3 or higher](https://www.knime.com/downloads/download-knime).
 
 The [KNIME Semantic Web](https://hub.knime.com/knime/extensions/org.knime.features.semanticweb) extension is required. When importing the workflow, installation of this extension is automatically prompted. 
 
