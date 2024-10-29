@@ -6,33 +6,22 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <config key="ColumnOrder">
-            <entry key="array-size" type="xint" value="4"/>
-            <entry key="0" type="xstring" value="entity"/>
-            <entry key="1" type="xstring" value="property"/>
-            <entry key="2" type="xstring" value="value"/>
-            <entry key="3" type="xstring" value="&lt;any unknown new column&gt;"/>
+        <config key="renamings">
+            <config key="0">
+                <entry key="oldName" type="xstring" value="Column0"/>
+                <entry key="newName" type="xstring" value="DFD-ID"/>
+            </config>
+            <config key="1">
+                <entry key="oldName" type="xstring" value="Column1"/>
+                <entry key="newName" type="xstring" value="DFD-Lemma"/>
+            </config>
         </config>
     </config>
-    <config key="nodeAnnotation">
-        <entry key="text" type="xstring" value=""/>
-        <entry key="contentType" type="xstring" value="text/plain"/>
-        <entry key="bgcolor" type="xint" value="16777215"/>
-        <entry key="x-coordinate" type="xint" value="833"/>
-        <entry key="y-coordinate" type="xint" value="379"/>
-        <entry key="width" type="xint" value="134"/>
-        <entry key="height" type="xint" value="19"/>
-        <entry key="alignment" type="xstring" value="CENTER"/>
-        <entry key="borderSize" type="xint" value="0"/>
-        <entry key="borderColor" type="xint" value="16777215"/>
-        <entry key="defFontSize" type="xint" value="11"/>
-        <entry key="annotation-version" type="xint" value="20151123"/>
-        <config key="styles"/>
-    </config>
+    <config key="variables"/>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="IDLE"/>
-    <entry key="factory" type="xstring" value="org.knime.base.node.preproc.columnresorter.ColumnResorterNodeFactory"/>
-    <entry key="node-name" type="xstring" value="Column Resorter"/>
+    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <entry key="factory" type="xstring" value="org.knime.base.node.preproc.column.renamer.ColumnRenamerNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Column Renamer"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
@@ -42,7 +31,7 @@
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
     <entry key="node-feature-version" type="xstring" value="5.3.2.v202409100934"/>
     <config key="factory_settings"/>
-    <entry key="name" type="xstring" value="Column Resorter"/>
+    <entry key="name" type="xstring" value="Column Renamer"/>
     <entry key="hasContent" type="xboolean" value="false"/>
     <entry key="isInactive" type="xboolean" value="false"/>
     <config key="ports">
